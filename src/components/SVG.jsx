@@ -1,7 +1,7 @@
 "use client"
-import React from 'react';
+import React, { forwardRef } from 'react';
 
-const SVG_Path = ((props, ref) => {
+const SVG_Path = forwardRef((props, ref) => {
     return (
         <svg
             ref={ref}

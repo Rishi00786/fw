@@ -4,7 +4,7 @@ import SVG_Path from './SVG'
 import { gsap } from 'gsap';
 
 const Hero = () => {
-    const svgRef = useRef<SVGSVGElement>(null);
+    const svgRef = useRef(null);
 
     useEffect(() => {
         if (svgRef.current) {
@@ -19,7 +19,7 @@ const Hero = () => {
                 });
             }
         }
-    }, [svgRef]);
+    }, []);
 
     return (
         <div className='h-[73vh] min-h-[500px] mt-16 w-screen flex flex-col items-center justify-start gap-4 md:gap-10 px-4'>
