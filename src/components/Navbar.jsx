@@ -13,9 +13,10 @@ const Navbar = () => {
         {/* Navbar Container */}
         <div className={`w-full h-[8vh] flex items-center justify-between px-4 md:px-8 py-3 rounded-full ${!isMenuOpen ? "shadow-lg" : "shadow-none"}`}>
           {/* Logo */}
-          <div className="text-xl md:text-3xl font-bold text-gray-800 hover:text-gray-600 cursor-pointer transition-colors">
-            <a href="/">SoftSell</a>
-          </div>
+          <a href='/' className="text-xl flex items-center justify-center gap-2 md:text-3xl font-bold text-gray-800 hover:text-gray-600 cursor-pointer transition-colors">
+            <div>SoftSell</div>
+            <div><img className='w-8 h-8' src="/ss.webp" alt="" srcset="" /></div>
+          </a>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex gap-6 text-lg font-semibold text-gray-700">
